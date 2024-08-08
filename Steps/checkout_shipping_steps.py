@@ -117,7 +117,7 @@ class CheckoutShippingSteps:
     @allure.step
     def click_on_place_order(self):
         try:
-            time.sleep(2)
+            time.sleep(3)
             self.singleton.get_driver.execute_script("arguments[0].scrollIntoView(true);", self.elements.next_button())
             self.elements.next_button().click()
             self.logger.get_logger().info("Successfully clicked element")
